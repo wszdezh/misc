@@ -1,4 +1,4 @@
-# Linux指令
+# Linux cmd
     ● grep -nr  "xxxxx"  /etc/    或	grep -E 'k1|k2'
     ● find /etc/ -name rc.local
     ● du -hd 1   查看一级目录大小
@@ -11,6 +11,7 @@
     ● ! number 执行第几条历史命令， echo $?  看上一条命令返回值
     ● su 切换用户（没写用户默认root）， sudo 提升权限
     ● telnet  *.*.*.* portnum   只能用于测试TCP端口
+	● vim 16进制编辑:1. %!xxd  2. %!xxd   3. wq
     ● 命令1 && 命令2 || 命令3   :前一条执行成功才执行第二条，否则执行命令3
         命令1;  命令2   :不管前一条执行是否成功，都会执行第二条
 
@@ -51,18 +52,14 @@
         p    //设置温度阈值
         gputop   //查看当前频率
 
+# QT
+	.pro文件 https://blog.csdn.net/hebbely/article/details/66970821
+	环境搭建 https://mp.weixin.qq.com/s/tuCAblgfN8kGoO7hE1lYH
 
-
-# FreeRTOS
-
-    在线文档：https://doc.embedfire.com/products/link/zh/latest/tutorial/ebf_freertos_tutorial.html
-
-    任务：数值越大优先级越高，0 代表最低优先级  
-    中断：数值越小优先级越高
-
-
-# 环形缓冲
-    https://github.com/barraq/BRBrain/tree/master/firmware
+# GDB
+	容器打印 https://gist.githubusercontent.com/skyscribe/3978082/raw/9ec52a76f6793ac9ad12fae11c10db458b64e79b/.gdbinit
+	100个gdb小技巧 https://github.com/hellogcc/100-gdb-tips
+	https://www.cnblogs.com/lizhimin123/p/10416975.html
 
 # Python
 指令：
@@ -73,7 +70,9 @@
     pip  install packname 
 	pip  uninstall  packname 
 	pip  freeze  	#查看已安装包与版本
-
+	pyinstaller -F -w --icon="图标绝对路径" name.py   打包为单个exe
+	pyinstaller -D -w --icon="图标绝对路径" name.py   打包为单个文件夹
+	
 pyqt5相关配置：
 
     pip install PyQt5  
@@ -84,40 +83,21 @@ pyqt5相关配置：
 	Parameters写入-m PyQt5.uic.pyuic  $FileName$ -o $FileNameWithoutExtension$.py
 	PyQt5信号与槽: https://www.cnblogs.com/Yanjy-OnlyOne/p/12315797.html
 
-xlsx: 
-
-	csv to xlsx：
-		import pandas as pd
-		csv = pd.read_csv('x.csv', encoding='utf-8') #gbk
-		csv.to_excel(x.xlsx, sheet_name='data')
-	xlsx to csv:
-		xls = pd.read_excel('x.xlsx', index_col=0)
-		xls.to_csv('x.csv', encoding='utf-8')
-	获取xlsx内容：
-		import xlrd
-		import numpy as np
-		workbook = xlrd.open_workbook(filePath)
-		sheet = workbook.sheet_by_index(0)
-		row = sheet.nrows
-		col = sheet.ncols
-		mt = np.zeros([row,col], np.float)
-		for i in range(row):
-			for j in range(col)
-				mt[i][j] = float(sheet.cell(i,j).value)
-
-创建文本并写入内容：
-
-	seq = ['xxx\n']
-	with open(fileName, 'w') as f:
-		f.writelines(seq)
-	
-
+demo.py
+	○ csv to xlsx
+	○ xlsx to csv
+	○ 获取xlsx内容
+	○ 创建文本并写入内容
+	○ xml转json
+	○ pyqt5 QWidget QThread
+	○ 打包第三方资源，编译后在xx.spec修改 datas=[("aes_encrypt.exe",".")]
 
 
 # C++ 
-    官网        http://www.cplusplus.com/ 
-    现代C++     https://changkun.de/modern-cpp/zh-cn/00-preface/ 
+    官网       		http://www.cplusplus.com/ 
+    现代C++     	https://changkun.de/modern-cpp/zh-cn/00-preface/ 
 	中文参考手册	https://zh.cppreference.com
+	在线编译		http://cpp.sh/
 
     extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
     malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
@@ -126,31 +106,57 @@ xlsx:
 		class aa{public: static int b;};
 		int aa::b = 0;
 
-
 # SQL
-
     https://www.w3school.com.cn/sql/index.asp
 
     mysql -u用户名 -p用户密码
     show databases;	show tables;
-    use 库名	 #进入XX库
-    desc 表名 ; 	 #查看表结构
+    use 库名	 	#进入XX库
+    desc 表名 ; 	#查看表结构
 
-    sqlite3  xx.db   #创建新数据库或打开数据库
+    sqlite3  xx.db  #创建新数据库或打开数据库
     .tables    
-    .schema    #查看数据库结构
-    .schema  表名	  #查看表结构
-    .quit 或者 .exit     	#退出
+    .schema    		#查看数据库结构
+    .schema  表名	#查看表结构
+    .quit 或者 .exit  #退出
 
-    select * from 表名；  #查看表内容    (* 表示所有字段)
-    SELECT COUNT(*) FROM 表名;	   #统计表的行数
-    DELETE FROM 表名 WHERE 时间字段 BETWEEN '开始时间' AND '结束时间'；
+    SELECT * FROM 表名；  #查看表内容(* 表示所有字段)
     INSERT INTO 表名（字段1，2，3） VALUES(值1，2，3)；
     UPDATE 表名 SET A=新值,B=新值;
-
+	SELECT COUNT(*) FROM 表名;	   #统计表的行数
+	
     判断字段是否为空
     UPDATE xxx_table set run_tim
     e=datetime('now','localtime') WHERE id=3 and run_time is null;
 
-    按某个字段排序
-    ORDER BY id LIMIT 0,1
+# Anaconda
+
+	创建环境： conda create -n xxxx python=3.8.5
+	删除环境： conda remove -n xxxx --all
+	查看环境： conda env list  或  conda info --envs
+	切换环境： activate xxx
+	查看环境中的包： conda list
+	查看当前源：conda config --show-sources
+	切换源：
+		https://blog.csdn.net/qq_29007291/article/details/81103603
+	安装指定版本tensorflow：
+		conda install --channel 
+		https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/win-64  tensorflow=1.14
+	或 
+		pip3 install tensorflow -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+# FreeRTOS
+
+    在线文档：https://doc.embedfire.com/products/link/zh/latest/tutorial/ebf_freertos_tutorial.html
+
+    任务：数值越大优先级越高，0 代表最低优先级  
+    中断：数值越小优先级越高
+
+# Lib
+    环形缓冲 https://github.com/barraq/BRBrain/tree/master/firmware
+	
+	
+	
+	
+	
