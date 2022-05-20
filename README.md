@@ -1,5 +1,5 @@
-# Linux cmd
-    ● grep -nr  "xxxxx"  /etc/    或	grep -E 'k1|k2'
+# Linux
+    ● grep -nr "xxxxx" /etc/ 或 grep -E 'k1|k2'
     ● find /etc/ -name rc.local
     ● du -hd 1   查看一级目录大小
     ● chown -R wangshize:wangshize /filename     递归修改文件所属
@@ -62,35 +62,36 @@
 	https://www.cnblogs.com/lizhimin123/p/10416975.html
 
 # Python
-指令：
 
-	https://pypi.org/ 	#包查找
-	https://docs.python.org/zh-cn/3/ 
-	pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple 
-    pip  install packname 
-	pip  uninstall  packname 
-	pip  freeze  	#查看已安装包与版本
-	pyinstaller -F -w --icon="图标绝对路径" name.py   打包为单个exe
-	pyinstaller -D -w --icon="图标绝对路径" name.py   打包为单个文件夹
-	
-pyqt5相关配置：
+	● Python资源大全 http://jobbole.github.io/awesome-python-cn/
 
-    pip install PyQt5  
-    pip install pyqt5-tools
-    
-    设置designer.exe
-    设置PyUIC
-	Parameters写入-m PyQt5.uic.pyuic  $FileName$ -o $FileNameWithoutExtension$.py
-	PyQt5信号与槽: https://www.cnblogs.com/Yanjy-OnlyOne/p/12315797.html
+	指令：
+		https://pypi.org/ 	#包查找
+		https://docs.python.org/zh-cn/3/ 
+		pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple 
+		pip  install packname 
+		pip  uninstall  packname 
+		pip  freeze  	#查看已安装包与版本
+		pyinstaller -F -w --icon="图标绝对路径" name.py   打包为单个exe
+		pyinstaller -D -w --icon="图标绝对路径" name.py   打包为单个文件夹
+		
+	pyqt5相关配置：
+		pip install PyQt5  
+		pip install pyqt5-tools
+		
+		设置designer.exe
+		设置PyUIC
+		Parameters写入-m PyQt5.uic.pyuic  $FileName$ -o $FileNameWithoutExtension$.py
+		PyQt5信号与槽: https://www.cnblogs.com/Yanjy-OnlyOne/p/12315797.html
 
-demo.py
-	○ csv to xlsx
-	○ xlsx to csv
-	○ 获取xlsx内容
-	○ 创建文本并写入内容
-	○ xml转json
-	○ pyqt5 QWidget QThread
-	○ 打包第三方资源，编译后在xx.spec修改 datas=[("aes_encrypt.exe",".")]
+	demo.py
+		○ csv to xlsx
+		○ xlsx to csv
+		○ 获取xlsx内容
+		○ 创建文本并写入内容
+		○ xml转json
+		○ pyqt5 QWidget QThread
+		○ 打包第三方资源，编译后在xx.spec修改 datas=[("aes_encrypt.exe",".")]
 
 
 # C++ 
