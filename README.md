@@ -95,10 +95,10 @@
 
 
 # C++ 
-    官网       		http://www.cplusplus.com/ 
+    官网       	http://www.cplusplus.com/ 
     现代C++     	https://changkun.de/modern-cpp/zh-cn/00-preface/ 
-	中文参考手册	https://zh.cppreference.com
-	在线编译		http://cpp.sh/
+    中文参考手册	https://zh.cppreference.com
+    在线编译      http://cpp.sh/
 
     extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
     malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
@@ -112,19 +112,19 @@
 
     mysql -u用户名 -p用户密码
     show databases;	show tables;
-    use 库名	 	#进入XX库
-    desc 表名 ; 	#查看表结构
+    use 库名	 #进入XX库
+    desc 表名 ; 	 #查看表结构
 
-    sqlite3  xx.db  #创建新数据库或打开数据库
+    sqlite3  xx.db    #创建新数据库或打开数据库
     .tables    
-    .schema    		#查看数据库结构
-    .schema  表名	#查看表结构
-    .quit 或者 .exit  #退出
+    .schema    	      #查看数据库结构
+    .schema  表名      #查看表结构
+    .quit 或者 .exit   #退出
 
     SELECT * FROM 表名；  #查看表内容(* 表示所有字段)
     INSERT INTO 表名（字段1，2，3） VALUES(值1，2，3)；
     UPDATE 表名 SET A=新值,B=新值;
-	SELECT COUNT(*) FROM 表名;	   #统计表的行数
+    SELECT COUNT(*) FROM 表名;	   #统计表的行数
 	
     判断字段是否为空
     UPDATE xxx_table set run_tim
