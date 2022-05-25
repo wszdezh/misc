@@ -48,8 +48,7 @@
         温度过高时gpu频率降低至16/64：
         echo 16 > /sys/bus/platform/drivers/galcore/gpu3DMinclock
         cat /sys/class/thermal/thermal_zone0/temp   //查看当前温度
-        echo 25000 > /sys/devices/virtual/thermal/thermal_zone0/trip_point_0_tem
-        p    //设置温度阈值
+        echo 25000 > /sys/devices/virtual/thermal/thermal_zone0/trip_point_0_temp    //设置温度阈值
         gputop   //查看当前频率
 
 # QT
