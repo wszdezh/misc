@@ -103,9 +103,10 @@
     extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
     malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
 	
-	静态成员变量： 类内声明，类外初始化
+    1. 静态成员变量： 类内声明，类外初始化
 		class aa{public: static int b;};
 		int aa::b = 0;
+    2. 基类的析构函数必须是虚析构函数
 
 # SQL
     https://www.w3school.com.cn/sql/index.asp
