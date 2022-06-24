@@ -54,7 +54,7 @@
 
 # QT
 	.pro文件 https://blog.csdn.net/hebbely/article/details/66970821
-	环境搭建 https://mp.weixin.qq.com/s/tuCAblgfN8kGoO7hE1lYH
+	
 
 # GDB
 	容器打印 https://gist.githubusercontent.com/skyscribe/3978082/raw/9ec52a76f6793ac9ad12fae11c10db458b64e79b/.gdbinit
