@@ -43,7 +43,8 @@
         ○ mount -t vfat /dev/sda1 /mnt
         ○ umount /mnt   解除不了可以用 
         ○ fuser -m   /mnt  看使用该文件系统的进程，杀掉即可解挂
-    ● systemctl	http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
+   
+    ● systemctl
 
     ● 温度管理与gpu降频
         温度过高时gpu频率降低至16/64：
