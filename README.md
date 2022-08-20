@@ -15,7 +15,8 @@
     ● vim 16进制编辑:1. %!xxd  2. %!xxd   3. wq
     ● 命令1 && 命令2 || 命令3   :前一条执行成功才执行第二条，否则执行命令3
         命令1;  命令2   :不管前一条执行是否成功，都会执行第二条
-
+    ● ldd xxx  查看库依赖
+    
     ● 烧写uboot
     echo 0 > 
     /sys/block/mmcblk1boot0/force_ro
