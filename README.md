@@ -53,8 +53,11 @@
         echo 25000 > /sys/devices/virtual/thermal/thermal_zone0/trip_point_0_temp    //设置温度阈值
         gputop   //查看当前频率
 
+    ● cmake
+    	https://blog.csdn.net/zhizhengguan/article/details/107034372
+
 # QT
-	.pro文件 https://blog.csdn.net/hebbely/article/details/66970821
+	
 	
 
 # GDB
