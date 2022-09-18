@@ -6,4 +6,8 @@
     QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
 #endif
 
+### 非阻塞延时
+ QEventLoop loop;
+ QTimer::singleShot(msec, &loop, SLOT(quit()));
+ loop.exec();
 
