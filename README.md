@@ -58,10 +58,6 @@
     ● cmake
     	https://blog.csdn.net/zhizhengguan/article/details/107034372
 
-# QT
-	
-	
-
 # GDB
 	容器打印 https://gist.githubusercontent.com/skyscribe/3978082/raw/9ec52a76f6793ac9ad12fae11c10db458b64e79b/.gdbinit
 	100个gdb小技巧 https://github.com/hellogcc/100-gdb-tips
@@ -104,7 +100,7 @@
     官网       	http://www.cplusplus.com/ 
     现代C++     	https://changkun.de/modern-cpp/zh-cn/00-preface/ 
     中文参考手册	https://zh.cppreference.com
-    在线编译      http://cpp.sh/
+    在线编译     http://cpp.sh/
 
     extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
     malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
@@ -160,9 +156,6 @@
 
     任务：数值越大优先级越高，0 代表最低优先级  
     中断：数值越小优先级越高
-
-# Lib
-    环形缓冲 https://github.com/barraq/BRBrain/tree/master/firmware
 	
 	
 	
