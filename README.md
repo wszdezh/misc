@@ -19,9 +19,8 @@
     ● crontab时间计算 crontab.guru
     
     ● 烧写uboot
-    echo 0 > 
-    /sys/block/mmcblk1boot0/force_ro
-    dd if=uboot. imx  of=/dev/mmcblk1boot0  bs=1  seek=1024
+        echo 0 > /sys/block/mmcblk1boot0/force_ro
+        dd if=uboot. imx  of=/dev/mmcblk1boot0  bs=1  seek=1024
 
     ● 终端直接向串口发送数据
         ○ stty
@@ -54,28 +53,29 @@
         gputop   //查看当前频率
 
     ● cmake
-    	https://blog.csdn.net/zhizhengguan/article/details/107034372
+        https://blog.csdn.net/zhizhengguan/article/details/107034372
 
     ● GDB
-	容器打印 https://gist.githubusercontent.com/skyscribe/3978082/raw/9ec52a76f6793ac9ad12fae11c10db458b64e79b/.gdbinit
-	100个gdb小技巧 https://github.com/hellogcc/100-gdb-tips
-	https://www.cnblogs.com/lizhimin123/p/10416975.html
+        容器打印 https://gist.githubusercont ent.com/skyscribe/3978082/raw/9ec52a76f6793ac9ad12fae11c10db458b64e79b/.gdbinit
+        100个gdb小技巧 https://github.com/hellogcc/100-gdb-tips
+        https://www.cnblogs.com/lizhimin123/p/10416975.html
 
+    ● FreeRTOS
+        在线文档：https://doc.embedfire.com/products/link/zh/latest/tutorial/ebf_freertos_tutorial.html
 # Python
 
-	Python资源大全 http://jobbole.github.io/awesome-python-cn/
-	https://pypi.org/ 	#包查找
-	https://docs.python.org/zh-cn/3/
+    Python资源大全 http://jobbole.github.io/awesome-python-cn/
+    https://pypi.org/ 	#包查找
+    https://docs.python.org/zh-cn/3/
 
-        指令:
-	pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple 
-	pip  install packname 
-	pip  uninstall  packname 
-	pip  freeze  	#查看已安装包与版本
-	pyinstaller -F -w --icon="图标绝对路径" name.py   打包为单个exe
-	pyinstaller -D -w --icon="图标绝对路径" name.py   打包为单个文件夹
-	打包第三方资源，编译后在xx.spec修改 datas=[("aes_encrypt.exe",".")]
-
+    指令:
+	  pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple 
+	  pip  install packname 
+	  pip  uninstall  packname 
+	  pip  freeze  	#查看已安装包与版本
+	  pyinstaller -F -w --icon="图标绝对路径" name.py   打包为单个exe
+	  pyinstaller -D -w --icon="图标绝对路径" name.py   打包为单个文件夹
+	  打包第三方资源，编译后在xx.spec修改 datas=[("aes_encrypt.exe",".")]
 
 # C++ 
     官网       	http://www.cplusplus.com/ 
@@ -122,13 +122,7 @@
 	或 
 		pip3 install tensorflow -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-
-# FreeRTOS
-
-    在线文档：https://doc.embedfire.com/products/link/zh/latest/tutorial/ebf_freertos_tutorial.html
-
-    任务：数值越大优先级越高，0 代表最低优先级  
-    中断：数值越小优先级越高
+ 
 	
 	
 	
