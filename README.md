@@ -45,8 +45,6 @@
         ○ mount -t vfat /dev/sda1 /mnt
         ○ umount /mnt   解除不了可以用 
         ○ fuser -m   /mnt  看使用该文件系统的进程，杀掉即可解挂
-   
-    ● systemctl
 
     ● 温度管理与gpu降频
         温度过高时gpu频率降低至16/64：
@@ -58,49 +56,32 @@
     ● cmake
     	https://blog.csdn.net/zhizhengguan/article/details/107034372
 
-# GDB
+    ● GDB
 	容器打印 https://gist.githubusercontent.com/skyscribe/3978082/raw/9ec52a76f6793ac9ad12fae11c10db458b64e79b/.gdbinit
 	100个gdb小技巧 https://github.com/hellogcc/100-gdb-tips
 	https://www.cnblogs.com/lizhimin123/p/10416975.html
 
 # Python
 
-	● Python资源大全 http://jobbole.github.io/awesome-python-cn/
+	Python资源大全 http://jobbole.github.io/awesome-python-cn/
+	https://pypi.org/ 	#包查找
+	https://docs.python.org/zh-cn/3/
 
-	指令：
-		https://pypi.org/ 	#包查找
-		https://docs.python.org/zh-cn/3/ 
-		pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple 
-		pip  install packname 
-		pip  uninstall  packname 
-		pip  freeze  	#查看已安装包与版本
-		pyinstaller -F -w --icon="图标绝对路径" name.py   打包为单个exe
-		pyinstaller -D -w --icon="图标绝对路径" name.py   打包为单个文件夹
-		
-	pyqt5相关配置：
-		pip install PyQt5  
-		pip install pyqt5-tools
-		
-		设置designer.exe
-		设置PyUIC
-		Parameters写入-m PyQt5.uic.pyuic  $FileName$ -o $FileNameWithoutExtension$.py
-		PyQt5信号与槽: https://www.cnblogs.com/Yanjy-OnlyOne/p/12315797.html
-
-	demo.py
-		○ csv to xlsx
-		○ xlsx to csv
-		○ 获取xlsx内容
-		○ 创建文本并写入内容
-		○ xml转json
-		○ pyqt5 QWidget QThread
-		○ 打包第三方资源，编译后在xx.spec修改 datas=[("aes_encrypt.exe",".")]
+        指令:
+	pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple 
+	pip  install packname 
+	pip  uninstall  packname 
+	pip  freeze  	#查看已安装包与版本
+	pyinstaller -F -w --icon="图标绝对路径" name.py   打包为单个exe
+	pyinstaller -D -w --icon="图标绝对路径" name.py   打包为单个文件夹
+	打包第三方资源，编译后在xx.spec修改 datas=[("aes_encrypt.exe",".")]
 
 
 # C++ 
     官网       	http://www.cplusplus.com/ 
     现代C++     	https://changkun.de/modern-cpp/zh-cn/00-preface/ 
     中文参考手册	https://zh.cppreference.com
-    在线编译     http://cpp.sh/
+    在线编译      http://cpp.sh/
 
     extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
     malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
@@ -114,7 +95,8 @@
     https://www.w3school.com.cn/sql/index.asp
 
     mysql -u用户名 -p用户密码
-    show databases;	show tables;
+    show databases;	
+    show tables;
     use 库名	 #进入XX库
     desc 表名 ; 	 #查看表结构
 
@@ -123,15 +105,6 @@
     .schema    	      #查看数据库结构
     .schema  表名      #查看表结构
     .quit 或者 .exit   #退出
-
-    SELECT * FROM 表名；  #查看表内容(* 表示所有字段)
-    INSERT INTO 表名（字段1，2，3） VALUES(值1，2，3)；
-    UPDATE 表名 SET A=新值,B=新值;
-    SELECT COUNT(*) FROM 表名;	   #统计表的行数
-	
-    判断字段是否为空
-    UPDATE xxx_table set run_tim
-    e=datetime('now','localtime') WHERE id=3 and run_time is null;
 
 # Anaconda
 
