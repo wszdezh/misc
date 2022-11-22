@@ -62,6 +62,14 @@
 
     ● FreeRTOS
         在线文档：https://doc.embedfire.com/products/link/zh/latest/tutorial/ebf_freertos_tutorial.html
+
+# QT 
+
+    ● 非阻塞延时
+        QEventLoop loop;
+        QTimer::singleShot(msec, &loop, SLOT(quit()));
+        loop.exec();
+
 # Python
 
     Python资源大全 http://jobbole.github.io/awesome-python-cn/
