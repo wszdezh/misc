@@ -23,7 +23,8 @@
         dd if=uboot. imx  of=/dev/mmcblk1boot0  bs=1  seek=1024
 
     ● 终端直接向串口发送数据
-        ○ stty
+        ○ stty -F /dev/ttymxc1
+        ○ stty -F /dev/ttyS1 speed 115200
         ○ hexdump -C /dev/ttymxc4
         ○ echo -e -n "\x7e\x01\xf5\x11" > /dev/ttymxc4
 
