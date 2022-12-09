@@ -17,7 +17,8 @@
         命令1;  命令2   :不管前一条执行是否成功，都会执行第二条
     ● ldd xxx  查看库依赖
     ● crontab时间计算 crontab.guru
-    
+    ● 阿里镜像  https://developer.aliyun.com/mirror/?serviceType=mirror
+
     ● 烧写uboot
         echo 0 > /sys/block/mmcblk1boot0/force_ro
         dd if=uboot. imx  of=/dev/mmcblk1boot0  bs=1  seek=1024
