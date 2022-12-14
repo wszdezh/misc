@@ -19,9 +19,12 @@
     ● crontab时间计算 crontab.guru
     ● 阿里镜像  https://developer.aliyun.com/mirror/?serviceType=mirror
 
+    ● make
+        make VERBOSE=1 #输出编译过程
+
     ● 烧写uboot
         echo 0 > /sys/block/mmcblk1boot0/force_ro
-        dd if=uboot. imx  of=/dev/mmcblk1boot0  bs=1  seek=1024
+        dd if=uboot.imx  of=/dev/mmcblk1boot0  bs=1  seek=1024
 
     ● 终端直接向串口发送数据
         ○ stty -F /dev/ttymxc1
