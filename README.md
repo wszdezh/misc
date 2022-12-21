@@ -61,7 +61,7 @@
         https://blog.csdn.net/zhizhengguan/article/details/107034372
 
     ● GDB
-        容器打印 https://gist.githubusercont ent.com/skyscribe/3978082/raw/9ec52a76f6793ac9ad12fae11c10db458b64e79b/.gdbinit
+        容器打印 https://gist.githubusercontent.com/skyscribe/3978082/raw/9ec52a76f6793ac9ad12fae11c10db458b64e79b/.gdbinit
         100个gdb小技巧 https://github.com/hellogcc/100-gdb-tips
         https://www.cnblogs.com/lizhimin123/p/10416975.html
 
