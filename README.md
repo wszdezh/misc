@@ -18,7 +18,8 @@
     ● ldd xxx  查看库依赖
     ● crontab时间计算 crontab.guru
     ● 阿里镜像  https://developer.aliyun.com/mirror/?serviceType=mirror
-
+    ● while true;do cmd1;cmd2;done
+    
     ● make
         make VERBOSE=1 #输出编译过程
 
@@ -68,6 +69,20 @@
     ● FreeRTOS
         在线文档：https://doc.embedfire.com/products/link/zh/latest/tutorial/ebf_freertos_tutorial.html
 
+# C++ 
+    官网       	http://www.cplusplus.com/ 
+    现代C++     	https://changkun.de/modern-cpp/zh-cn/00-preface/ 
+    中文参考手册	https://zh.cppreference.com
+    在线编译      http://cpp.sh/
+
+    extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
+    malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
+	
+    1. 静态成员变量： 类内声明，类外初始化
+		class aa{public: static int b;};
+		int aa::b = 0;
+    2. 基类的析构函数必须是虚析构函数
+
 # QT 
 
     ● 非阻塞延时
@@ -89,20 +104,6 @@
 	  pyinstaller -F -w --icon="图标绝对路径" name.py   打包为单个exe
 	  pyinstaller -D -w --icon="图标绝对路径" name.py   打包为单个文件夹
 	  打包第三方资源，编译后在xx.spec修改 datas=[("aes_encrypt.exe",".")]
-
-# C++ 
-    官网       	http://www.cplusplus.com/ 
-    现代C++     	https://changkun.de/modern-cpp/zh-cn/00-preface/ 
-    中文参考手册	https://zh.cppreference.com
-    在线编译      http://cpp.sh/
-
-    extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
-    malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
-	
-    1. 静态成员变量： 类内声明，类外初始化
-		class aa{public: static int b;};
-		int aa::b = 0;
-    2. 基类的析构函数必须是虚析构函数
 
 # SQL
     https://www.w3school.com.cn/sql/index.asp
