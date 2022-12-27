@@ -53,7 +53,7 @@
 
     ● 温度管理与gpu降频
         温度过高时gpu频率降低至16/64：
-        echo 16 > /sys/bus/platform/drivers/galcore/gpu3DMinclock
+        echo 16 > /sys/bus/platform/drivers/galcore/gpu3DMinClock
         cat /sys/class/thermal/thermal_zone0/temp   //查看当前温度
         echo 25000 > /sys/devices/virtual/thermal/thermal_zone0/trip_point_0_temp    //设置温度阈值
         gputop   //查看当前频率
@@ -70,25 +70,33 @@
         在线文档：https://doc.embedfire.com/products/link/zh/latest/tutorial/ebf_freertos_tutorial.html
 
 # C++ 
-    官网       	http://www.cplusplus.com/ 
-    现代C++     	https://changkun.de/modern-cpp/zh-cn/00-preface/ 
-    中文参考手册	https://zh.cppreference.com
-    在线编译      http://cpp.sh/
+    官网 http://www.cplusplus.com/ 
+    现代C++ https://changkun.de/modern-cpp/zh-cn/00-preface/ 
+    中文参考手册 https://zh.cppreference.com
+    在线编译 http://cpp.sh/
 
     extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
     malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
 	
     1. 静态成员变量： 类内声明，类外初始化
-		class aa{public: static int b;};
-		int aa::b = 0;
-    2. 基类的析构函数必须是虚析构函数
-
+	class aa{public: static int b;};
+	int aa::b = 0;
+    2. 用时计算
+	#include <chrono>
+	auto start = std::chrono::steady_clock::now();
+	// xxxx
+	auto end = std::chrono::steady_clock::now();
+	std::cout << "elapsed time: " << std::chrono::duration<double>(end-start).count() << "s\n";
+    3. 
+    4.
 # QT 
-
-    ● 非阻塞延时
+    1. 非阻塞延时
         QEventLoop loop;
         QTimer::singleShot(msec, &loop, SLOT(quit()));
         loop.exec();
+    2. 数据容器 https://qtguide.ustclug.org
+    3. 
+    4. 
 
 # Python
 
@@ -136,9 +144,3 @@
 	或 
 		pip3 install tensorflow -i https://pypi.tuna.tsinghua.edu.cn/simple
 
- 
-	
-	
-	
-	
-	
