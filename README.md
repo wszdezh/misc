@@ -95,7 +95,7 @@
         QTimer::singleShot(msec, &loop, SLOT(quit()));
         loop.exec();
     2. 数据容器 https://qtguide.ustclug.org
-    3. 
+    3. 单例 Q_GLOBAL_STATIC(QThreadPool, theInstance)  用法看qthreadpool.h
     4. 
 
 # Python
@@ -113,20 +113,6 @@
 	  pyinstaller -D -w --icon="图标绝对路径" name.py   打包为单个文件夹
 	  打包第三方资源，编译后在xx.spec修改 datas=[("aes_encrypt.exe",".")]
 
-# SQL
-    https://www.w3school.com.cn/sql/index.asp
-
-    mysql -u用户名 -p用户密码
-    show databases;	
-    show tables;
-    use 库名	 #进入XX库
-    desc 表名 ; 	 #查看表结构
-
-    sqlite3  xx.db    #创建新数据库或打开数据库
-    .tables    
-    .schema    	      #查看数据库结构
-    .schema  表名      #查看表结构
-    .quit 或者 .exit   #退出
 
 # Anaconda
 
