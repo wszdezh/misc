@@ -96,7 +96,8 @@
         loop.exec();
     2. 数据容器 https://qtguide.ustclug.org
     3. 单例 Q_GLOBAL_STATIC(QThreadPool, theInstance)  用法看qthreadpool.h
-    4. Inside Qt https://blog.csdn.net/ACK_ACK/article/details/104729945/
+    4. QML单例：QT助手 qmlRegisterSingletonType
+    5. Inside Qt https://blog.csdn.net/ACK_ACK/article/details/104729945/
 
 # Python
 
