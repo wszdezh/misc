@@ -79,14 +79,14 @@
     malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
 	
     1. 静态成员变量： 类内声明，类外初始化
-	class aa{public: static int b;};
-	int aa::b = 0;
+        class aa{public: static int b;};
+        int aa::b = 0;
     2. 用时计算
-	#include <chrono>
-	auto start = std::chrono::steady_clock::now();
-	// xxxx
-	auto end = std::chrono::steady_clock::now();
-	std::cout << "elapsed time: " << std::chrono::duration<double>(end-start).count() << "s\n";
+        #include <chrono>
+        auto start = std::chrono::steady_clock::now();
+        // xxxx
+        auto end = std::chrono::steady_clock::now();
+        std::cout << "elapsed time: " << std::chrono::duration<double>(end-start).count() << "s\n";
     3. 
     4.
 # QT 
