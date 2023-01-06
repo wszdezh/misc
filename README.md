@@ -75,7 +75,7 @@
     中文参考手册 https://zh.cppreference.com
     在线编译 http://cpp.sh/
 
-    extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
+    extern "C"  https://www.cnblogs.com/TenosDoIt/p/3163621.html
     malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
     编译优化 https://tech.meituan.com/2020/12/10/apache-kylin-practice-in-meituan.html
     
