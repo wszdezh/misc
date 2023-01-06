@@ -77,7 +77,8 @@
 
     extern "C"  https://blog.csdn.net/u010639500/article/details/87885421
     malloc分析  https://blog.csdn.net/qq_41453285/category_9150569.html
-	
+    编译优化 https://tech.meituan.com/2020/12/10/apache-kylin-practice-in-meituan.html
+    
     1. 静态成员变量： 类内声明，类外初始化
         class aa{public: static int b;};
         int aa::b = 0;
@@ -87,8 +88,9 @@
         // xxxx
         auto end = std::chrono::steady_clock::now();
         std::cout << "elapsed time: " << std::chrono::duration<double>(end-start).count() << "s\n";
-    3. 
+    3. 前置类型声明，避免头文件的引入，优化编译：只能用于指针、引用、函数
     4.
+    5. 
 # QT 
     1. 非阻塞延时
         QEventLoop loop;
