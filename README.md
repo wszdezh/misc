@@ -100,6 +100,9 @@
     3. 单例 Q_GLOBAL_STATIC(QThreadPool, theInstance)  用法看qthreadpool.h
     4. QML单例：QT助手 qmlRegisterSingletonType
     5. Inside Qt https://blog.csdn.net/ACK_ACK/article/details/104729945/
+    6、QML
+    	a. font.family: "Microsoft YaHei"
+	b. Qt.formatDateTime(new Date(), "yyyy-MM-dd HH:mm:ss.zzz")
 
 # Python
 
