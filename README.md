@@ -89,7 +89,7 @@
         auto end = std::chrono::steady_clock::now();
         std::cout << "elapsed time: " << std::chrono::duration<double>(end-start).count() << "s\n";
     3. 前置类型声明，避免头文件的引入，优化编译：只能用于指针、引用、函数
-    4.
+    4. 基类析构需使用虚析构，销毁时才能调用派生类的析构
     5. 
 # QT 
     1. 非阻塞延时
