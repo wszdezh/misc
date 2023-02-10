@@ -1,21 +1,20 @@
 # Linux
     ● grep -nr "xxxxx" /etc/ 或 grep -E 'k1|k2'
     ● find /etc/ -name rc.local
-    ● du -hd 1   查看一级目录大小
-    ● chown -R wangshize:wangshize /filename     递归修改文件所属
+    ● du -hd 1   #查看一级目录大小
+    ● chown -R wangshize:wangshize /filename     #递归修改文件所属
     ● ln -sf  目标名  软连接名
-    ● cat /proc/cmdline   可以看bootargs
-    ● ps -T pid 查看线程
-    ● lsof  看进程打开的文件描述符
-    ● cat /dev/null > xxx  清空文件
-    ● top -H -p pid  查看线程
-    ● ! number 执行第几条历史命令， echo $?  看上一条命令返回值
-    ● su 切换用户（没写用户默认root）， sudo 提升权限
+    ● cat /proc/cmdline   #可以看bootargs
+    ● ps -T pid #查看线程
+    ● lsof  #看进程打开的文件描述符
+    ● cat /dev/null > xxx  #清空文件
+    ● top -H -p pid  #查看线程
+    ● ! number 执行第几条历史命令， echo $?  #看上一条命令返回值
     ● telnet  *.*.*.* portnum   只能用于测试TCP端口
     ● vim 16进制编辑:1. %!xxd  2. %!xxd   3. wq
-    ● 命令1 && 命令2 || 命令3   :前一条执行成功才执行第二条，否则执行命令3
-        命令1;  命令2   :不管前一条执行是否成功，都会执行第二条
-    ● ldd xxx  查看库依赖
+    ● 命令1 && 命令2 || 命令3  #前一条执行成功才执行第二条，否则执行命令3
+        命令1; 命令2  #不管前一条执行是否成功，都会执行第二条
+    ● ldd xxx  #查看库依赖
     ● crontab时间计算 crontab.guru
     ● 阿里镜像  https://developer.aliyun.com/mirror/?serviceType=mirror
     ● while true;do cmd1;cmd2;done
@@ -73,10 +72,10 @@
         在线文档：https://doc.embedfire.com/products/link/zh/latest/tutorial/ebf_freertos_tutorial.html
     
     ● VMware 
-	https://www.jb51.net/softs/745243.html
-	ZF3R0-FHED2-M80TY-8QYGC-NPKYF
-	YF390-0HF8P-M81RQ-2DXQE-M2UT6
-	ZF71R-DMX85-08DQY-8YMNC-PPHV8 
+        https://www.jb51.net/softs/745243.html
+        ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+        YF390-0HF8P-M81RQ-2DXQE-M2UT6
+        ZF71R-DMX85-08DQY-8YMNC-PPHV8 
 	
 # C++ 
     官网 http://www.cplusplus.com/ 
