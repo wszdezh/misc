@@ -19,6 +19,9 @@
     ● crontab时间计算 crontab.guru
     ● 阿里镜像  https://developer.aliyun.com/mirror/?serviceType=mirror
     ● while true;do cmd1;cmd2;done
+    ● date +%F' '%T   #输出格式2023-01-31 15:45:00
+    ● echo `cmd1` `cmd2`  #两个命令输出在同一行
+    ● dd if=/dev/zero of=/dev/null count=1024000   #可用于测试占用cpu
     
     ● make
         make VERBOSE=1 #输出编译过程
@@ -68,7 +71,13 @@
 
     ● FreeRTOS
         在线文档：https://doc.embedfire.com/products/link/zh/latest/tutorial/ebf_freertos_tutorial.html
-
+    
+    ● VMware 
+	https://www.jb51.net/softs/745243.html
+	ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+	YF390-0HF8P-M81RQ-2DXQE-M2UT6
+	ZF71R-DMX85-08DQY-8YMNC-PPHV8 
+	
 # C++ 
     官网 http://www.cplusplus.com/ 
     现代C++ https://changkun.de/modern-cpp/zh-cn/00-preface/ 
