@@ -111,22 +111,6 @@
     6、QML
         a. font.family: "Microsoft YaHei"
         b. Qt.formatDateTime(new Date(), "yyyy-MM-dd HH:mm:ss.zzz")
-
-# 设计模式
-    1、创建型模式
-        单例：饿汉式：静态变量直接初始化，懒汉式：第一次使用才加载
-    2、结构型模式
-        适配器：
-        角色：目标抽象、适配器、适配者
-        关系：适配器继承于目标抽象类，关联适配者接口
-        Adaptee * adaptee  = new Adaptee();
-        Target * tar = new Adapter(adaptee); //关联适配者
-        tar->request(); //调用适配者的函数
-	
-        外观：为子系统中的一组接口提供一个统一的入口
-        角色：外观、子系统
-    3、行为型模式
-        迭代器：提供一种方法来访问聚合对象，而不用暴露这个对象的内部表示
 	
 # Python
 
