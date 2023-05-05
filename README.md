@@ -75,7 +75,21 @@
         https://www.jb51.net/softs/745243.html
         ZF3R0-FHED2-M80TY-8QYGC-NPKYF
         YF390-0HF8P-M81RQ-2DXQE-M2UT6
-        ZF71R-DMX85-08DQY-8YMNC-PPHV8 
+        ZF71R-DMX85-08DQY-8YMNC-PPHV8
+	
+    ● ip-rule
+    	ip rule show
+	ip route show table 10
+	ip rule add from 192.168.69.0/24 table 10
+	ip route add default via 192.168.69.1 table 10
+	ip route add 192.168.69.0/24 dev eth0 proto kernel scope link src 192.168.69.41 table 10
+	ip route del 192.168.69.0/24 dev eth0 proto kernel scope link src 192.168.69.41 table 10
+	ip route del 192.168.69.0/24 table 10
+	ip route del default table 10
+    ● route
+	route add -net 192.168.69.141 netmask 255.255.255.0 dev eth1
+	route add -net 192.168.69.0/24 gw 192.168.124.254
+	route del 192.168.69.141
 	
 # C++ 
     官网 http://www.cplusplus.com/ 
