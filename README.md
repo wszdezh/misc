@@ -90,6 +90,9 @@
         route add -net 192.168.69.141 netmask 255.255.255.0 dev eth1
         route add -net 192.168.69.0/24 gw 192.168.124.254
         route del 192.168.69.141
+    ● IO模型 
+        misc/res/
+        https://mp.weixin.qq.com/s/nJRM6R6r4JIfnLuol_g-lQ
 	
 # C++ 
     官网 http://www.cplusplus.com/ 
@@ -158,4 +161,14 @@
 		https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/win-64  tensorflow=1.14
 	或 
 		pip3 install tensorflow -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# Lib
+    ● libshmcache
+        1、线程间原子操作(shm_lock: __sync_add_and_fetch)
+        2、死锁检测(shm_lock: shm_detect_deadlock)
+        3、零长数组、文件锁
+
+
+
+
 
