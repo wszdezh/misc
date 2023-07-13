@@ -173,6 +173,8 @@
         misc/res/
         https://github.com/barraq/BRBrain/tree/master/firmware
 
+    ● HASH 
+        https://github.com/troydhanson/uthash
 
 
 
