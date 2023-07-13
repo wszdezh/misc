@@ -164,10 +164,14 @@
 
 # Lib
     ● libshmcache
+        https://github.com/happyfish100/libshmcache
         1、线程间原子操作(shm_lock: __sync_add_and_fetch)
         2、死锁检测(shm_lock: shm_detect_deadlock)
         3、零长数组、文件锁
-
+	
+    ● 环形缓冲区 
+        misc/res/
+        https://github.com/barraq/BRBrain/tree/master/firmware
 
 
 
